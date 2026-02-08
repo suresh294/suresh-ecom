@@ -1,0 +1,52 @@
+.skeleton-card {
+    background: white;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 380px;
+}
+
+.pulse {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: pulse 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes pulse {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.skeleton-image {
+    height: 200px;
+    width: 100%;
+}
+
+.skeleton-text {
+    height: 16px;
+    width: 100%;
+}
+
+.skeleton-text-short {
+    height: 16px;
+    width: 60%;
+}
+
+.skeleton-price {
+    height: 24px;
+    width: 40%;
+}
+
+.skeleton-button {
+    height: 40px;
+    width: 100%;
+    margin-top: auto;
+}

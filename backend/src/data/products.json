@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Wireless Noise Cancelling Headphones",
+        "category": "Electronics",
+        "price": 299.99,
+        "discount": 10,
+        "rating": 4.5,
+        "image": "https://example.com/images/headphones.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Ergonomic Office Chair",
+        "category": "Furniture",
+        "price": 199.50,
+        "discount": 15,
+        "rating": 4.2,
+        "image": "https://example.com/images/chair.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Smart Watch Series 7",
+        "category": "Electronics",
+        "price": 349.00,
+        "discount": 5,
+        "rating": 4.8,
+        "image": "https://example.com/images/watch.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Cotton Crewneck T-Shirt",
+        "category": "Fashion",
+        "price": 25.00,
+        "discount": 0,
+        "rating": 4.0,
+        "image": "https://example.com/images/tshirt.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Coffee Maker with Grinder",
+        "category": "Appliances",
+        "price": 89.99,
+        "discount": 20,
+        "rating": 4.4,
+        "image": "https://example.com/images/coffeemaker.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Running Shoes",
+        "category": "Fashion",
+        "price": 120.00,
+        "discount": 10,
+        "rating": 4.6,
+        "image": "https://example.com/images/shoes.jpg"
+    }
+]

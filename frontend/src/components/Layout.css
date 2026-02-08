@@ -1,0 +1,196 @@
+:root {
+  --primary: #2874f0;
+  --secondary: #fb641b;
+  --bg-light: #f1f3f6;
+  --white: #ffffff;
+  --text-dark: #212121;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  max-width: 1248px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  min-width: fit-content;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  background: var(--white);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-btn {
+  background: var(--white);
+  border: none;
+  color: var(--primary);
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  opacity: 0.9;
+}
+
+.cart-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.cart-badge {
+  background-color: var(--secondary);
+  color: white;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  border: 1px solid white;
+}
+
+.main-content {
+  flex: 1;
+  background-color: var(--bg-light);
+  padding: 20px 0;
+}
+
+.content-wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer Improvements */
+.footer {
+  background: #172337;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1248px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: #878787;
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-section p {
+  font-size: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #454d5e;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .search-bar {
+    order: 3;
+    width: 100%;
+    max-width: none;
+  }
+
+  .nav-links {
+    margin-left: auto;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
